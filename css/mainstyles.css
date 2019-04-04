@@ -1,3 +1,20 @@
-.navbar{ background: #F97300}
+:root {
+    --my-green: rgb(0,171,68);
+    /*--my-black: rgb(30,30,30);*/
+    --my-black: rgb(22,22,22);
+    --my-white: whitesmoke;
+    --shadow: rgb(222,222,222);
+}
 
-.nav-link, .navbar-brand{ color: #F4F4F4; cursor: pointer;}
+.navbar-dark .navbar-brand {
+    color: var(--my-green);
+}
+
+ .carousel-inner img {
+     width: 100%;
+     height: 100%;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.75);
+}
