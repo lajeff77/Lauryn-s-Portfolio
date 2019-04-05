@@ -10,11 +10,21 @@
     color: var(--my-green);
 }
 
+
  .carousel-inner img {
      width: 100%;
      height: 100%;
 }
 
+/*.carousel-item.active, .carousel-item-next, .carousel-item-prev{
+    display: block;
+    text-align: center
+}*/
+
 .carousel-caption {
+    /*width:100%;
+    height: auto;
+    margin: auto;*/
+
     background: rgba(0, 0, 0, 0.75);
 }
