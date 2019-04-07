@@ -20,10 +20,15 @@ body{
     height: 100%;
 }
 
-
 /*Navbar CSS*/
 .navbar-dark .navbar-brand {
     color: var(--my-green);
+    font-family: "Consolas";
+}
+
+.navbar-dark
+{
+  font-family: 'Raleway', sans-serif;
 }
 
 /*slider CSS*/
@@ -49,4 +54,6 @@ body{
 .carousel-caption {
     background: rgba(0, 0, 0, 0.75);
 }
+
+/*Content CSS*/
 
