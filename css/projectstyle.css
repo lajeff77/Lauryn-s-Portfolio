@@ -1,0 +1,25 @@
+#project-body
+{
+    background-image: url("../images/grass.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#project-carousel
+{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 7%;
+    border-style: solid;
+    border-color: var(--my-white);
+    border-radius: 5px;
+}
+
+.carousel-caption
+{
+    border-style: solid;
+    border-color: var(--my-white);
+    border-radius: 5px;
+    background-color: var(--my-black-trans);
+}

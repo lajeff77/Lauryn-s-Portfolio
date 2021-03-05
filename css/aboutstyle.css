@@ -1,0 +1,26 @@
+#about-body
+{
+    background-image: url("../images/tea2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#about
+{
+    margin: 15px;
+    background-color: var(--my-black-trans);
+}
+
+h2
+{
+    padding: 10px;
+    /* background-color: var(--my-green); */
+    color: var(--my-white);
+}
+
+p{
+    padding: 10px;
+    color: var(--my-white);
+    /* color: var(--my-black); */
+}

@@ -1,10 +1,11 @@
 :root {
     --my-green: rgb(0,171,68);
-    /* --my-green-trans: rgb(0,171,68,0.4); */
+    --my-green-trans: rgb(0,171,68,0.4);
     --my-blacker: rgb(10,15,19);
-    /* --my-black: rgb(29,40,43); */
+    --my-black: rgb(29,40,43);
+    --my-black-trans: rgb(29,40,43, 0.4);
     --my-white: rgb(245,245,245);
-    --my-white-shadow: rgb(171, 171, 171);
+    --my-white-shadow: rgb(117, 117, 117);
 }
 
 /*Background*/
@@ -21,6 +22,7 @@ body{
 .navbar-dark .navbar-brand
 {
     color: var(--my-green);
+    padding: 5px;
 } 
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -30,7 +32,6 @@ body{
 #nav-top{
     font-family: 'Raleway', sans-serif;
     background-color: var(--my-blacker) !important;
-    /* background-color: var(--my-green-trans); */
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -43,53 +44,10 @@ body{
     color:var(--my-green);
 }
 
-/* for the hompage*/
-#home-body
-{
-    background-image: url("../images/keyboard.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#quote
-{
-    color: var(--my-white);
-    text-align: center;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid var(--my-green); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .10em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(60, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 45% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--my-green); }
-  }
-
-
-  .navbar .fixed-bottom
-  {
-    text-align: end;
-  }
-
+  /* for the link on the hompage with the photo credit */
 #photo-credit
 {
-    color:var(--my-white-shadow);
+    color:var(--my-white);
 }
 
 #photo-link a:link,
@@ -97,89 +55,5 @@ a:visited,
 a:hover,
 a:active
 {
-    color:var(--my-white-shadow);
+    color:var(--my-white);
 }
-
-The sidepanel menu
-.sidepanel {
-    height: 300px; /* Specify a height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-  }
-  
-  /* The sidepanel links */
-  .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidepanel a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidepanel .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  /* Style the button that is used to open the sidepanel */
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: rgba(68, 68, 68, 0);
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  }
-  
-  .openbtn:hover {
-    background-color: rgba(68, 68, 68, 0);
-  }
-
-/*slider CSS*/
-#slider {
-    padding-top: 100px;
-    max-width: 600px;
-    margin: auto;
-}
-
-.carousel-inner {
-    position:relative;
-    border-style: solid;
-    border-width: 10px;
-    border-color: var(--my-black);
-    outline: 10px solid var(--my-green);
-}
-
-.carousel-inner img {
-     width: 100%;
-     height: 100%;
-}
-
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.75);
-}
-
-.footer {
-    position: relative;
-    margin-top: -150px; /* negative value of footer height */
-    height: 150px;
-    clear:both;
-    padding-top:20px;
-  } 

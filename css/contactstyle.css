@@ -1,0 +1,26 @@
+#contact-body
+{
+    background-image: url("../images/telephone2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact-content
+{
+    color:var(--my-white);
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 35%;
+    width: 30%;
+    padding: 20px;
+    background-color:var(--my-black-trans);
+}
+
+.contact-link a:link,
+a:visited,
+a:hover,
+a:active
+{
+    color:var(--my-white);
+}
